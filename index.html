@@ -17,8 +17,9 @@
     </br>
     <form class="main-input">
       <input type="text" placeholder="Topic of poem wanted.." autofocus required autocomplete="off"/>
-      <input type="Generate Poem" />
+      <input type="Submit"  value="Generate" id="submit-btn"/>
     </form>
+    <div class="header-box"> Results
     <div class="poem-box">
         Like a sweet-apple
         turning red high
@@ -27,6 +28,10 @@
     </br>
         Not forgotten—
         they couldn’t reach it.
+    </div>
+    </div>
+    <div>
+        <button onclick="copyText()" id="copy-btn">Copy Result</button>
     </div>
 
 
