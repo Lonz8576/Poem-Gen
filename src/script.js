@@ -20,15 +20,15 @@ copyButtonElement.addEventListener("click", function() {
 
 
 
-
-event.preventDefault();
+function generatePoem(event){
+ event.preventDefault();
 new Typewriter('#poem-area', {
   strings: ['Not forgotten they could not reach it.'],
   autoStart: true,
   delay: 1,
 
 });
-
+}
 
 let poemElement = document.querySelector("#poem-area");
 poemElement.addEventListener("submit", generatePoem);
