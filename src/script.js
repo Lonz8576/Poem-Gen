@@ -12,3 +12,23 @@ copyButtonElement.addEventListener("click", function() {
     alert("Text Copied 😊");
 
 });
+
+
+
+
+
+
+
+
+
+event.preventDefault();
+new Typewriter('#poem-area', {
+  strings: ['Not forgotten they could not reach it.'],
+  autoStart: true,
+  delay: 1,
+
+});
+
+
+let poemElement = document.querySelector("#poem-area");
+poemElement.addEventListener("submit", generatePoem);
