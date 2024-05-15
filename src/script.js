@@ -22,13 +22,13 @@ copyButtonElement.addEventListener("click", function() {
 
 function generatePoem(event){
  event.preventDefault();
-new Typewriter('#poem-area', {
-  strings: ['Not forgotten they could not reach it.'],
+new Typewriter("#poem-area", {
+  strings:"Forgotten by pickers. Not forgotten— they couldn't reach it.",
   autoStart: true,
-  delay: 1,
+  delay: 1.5,
 
 });
 }
 
-let poemElement = document.querySelector("#poem-area");
+let poemElement = document.querySelector("#poem-form");
 poemElement.addEventListener("submit", generatePoem);
