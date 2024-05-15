@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/stylesheet.css">
     <title>Sapphos</title>
 </head>
 <body>
-    <header>
-        <h1 class="header">Sappho</h1>
-    </header>
-    <main>
-<div class="short-des">Ai Generated poems inspired by the "Sapphic" meter of the "Poetess"</div>
+    <div class="container">
+        <header>
+            <h1 class="header">AI<span class="ai-font">Sapphos</span> </h1>
+        </header>
+
+<main>
+
+<div class="short-des">AI Generated poems inspired by the "Sapphic" meter of the "Poetess"</div>
     </br>
-    <form class="main-input">
-      <input type="text" placeholder="Topic of poem wanted.." autofocus required autocomplete="off"/>
+    <form>
+      <input type="text" placeholder="Topic or poem includes...." autofocus required autocomplete="off" class="prompt" id="prompt" />
       <input type="Submit"  value="Generate" id="submit-btn"/>
     </form>
-    <div class="header-box"> Results
-    <div class="poem-box">
+    <div class="header-box"> Results</div>
+    <div class="poem-area" id="poem-area">
+    
         Like a sweet-apple
         turning red high
         on the tip of the topmost branch.
         Forgotten by pickers.
     </br>
         Not forgotten—
-        they couldn’t reach it.
-    </div>
-    </div>
+        they couldn't reach it.
+
     <div>
-        <button onclick="copyText()" id="copy-btn">Copy Result</button>
+    <button onclick="copyText()" id="copy-btn">Copy Result</button>
     </div>
-
-
-
-
-
-
-
-
+    </div>
 
     </main>
+</br>
 
-
-<footer>🤖Project coded by  <a href="https://github.com/Lonz8576">Nic Alonso</a> </br>Open sourced on  <a href="https://github.com/Lonz8576/Poem-Gen">GitHub</a></br>Hosted by <a href="https://app.netlify.com/sites/lambent-parfait-7774fc/overview">Netlify</a></footer>
+<footer>🤖Project coded by <a href="https://github.com/Lonz8576">Nic Alonso</a> </br>Open sourced on <a href="https://github.com/Lonz8576/Poem-Gen">GitHub</a></br>Hosted by <a href="https://app.netlify.com/sites/lambent-parfait-7774fc/overview">Netlify</a></footer>
     <script src="src/script.js"></script>
+</div>
+
 </body>
 </html>
