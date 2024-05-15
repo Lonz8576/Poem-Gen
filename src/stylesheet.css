@@ -84,9 +84,7 @@ form{
     font-size: 16px;
 }
 button{
-    position: relative;
-    left:150px;
-    top:120px;
+    display: center;
     border-radius: 20px;
     padding: 6px;
     font-family: "Asul", serif;
@@ -110,4 +108,5 @@ footer{
     font-size: 13px;
     line-height: 1.3;
 }
+
 
