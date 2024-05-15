@@ -3,14 +3,14 @@
 
 
 
-
-
 function displayPoem(response){
  new Typewriter("#poem-area", {
-  strings: response.data.answer,
+  strings:response.data.answer,
   autoStart: true,
-  delay: 1.5,
-
+  delay: "natural",
+  pauseFor:2000,
+  cursor: "🤍",
+  cursorClassName:"Typewriter-cursor"
 });
 }
 
